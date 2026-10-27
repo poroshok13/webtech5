@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 1: Higher or Lower</title>
+  <link rel="stylesheet" href="task1.css">
+  <script src="task1.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <a href="index.html" class="back-link">&larr; Back</a>
+    <h1>Task 1: Higher or Lower</h1>
+    
+    <div class="stats">
+      <span>Lives: <strong id="lives">3</strong></span>
+      <span>Streak: <strong id="streak">0</strong></span>
+      <span>Best: <strong id="best">0</strong></span>
+    </div>
+
+    <div class="card">
+      <p class="label">Current Number:</p>
+      <div id="current-number" class="number">--</div>
+    </div>
+
+    <div id="message" class="message">Guess if next number (1-100) is higher or lower</div>
+
+    <div class="buttons">
+      <button type="button" id="btn-higher">Higher &uarr;</button>
+      <button type="button" id="btn-lower">Lower &darr;</button>
+      <button type="button" id="btn-restart" disabled>Restart</button>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 5 - Web Technologies</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f9;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      padding: 40px 16px;
+    }
+    .container {
+      width: 100%;
+      max-width: 600px;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    h1 {
+      font-size: 20px;
+    }
+    .meta {
+      font-size: 14px;
+      color: #666;
+    }
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .task-link {
+      padding: 14px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      text-decoration: none;
+      color: #222;
+      background: #fafafa;
+    }
+    .task-link:hover {
+      background: #eee;
+      border-color: #999;
+    }
+    .task-title {
+      font-weight: bold;
+      font-size: 15px;
+      margin-bottom: 4px;
+    }
+    .task-desc {
+      font-size: 13px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Assignment #5: JavaScript Basics</h1>
+    <p class="meta">Student: <strong>Ramazanov Maxsutkhan</strong> | Group: <strong>IT-2506</strong></p>
+
+    <div class="links">
+      <a href="task1.html" class="task-link">
+        <div class="task-title">Task 1: Higher or Lower (Option A)</div>
+        <div class="task-desc">Random numbers (1-100), streak counter, 3 lives, no page reloads.</div>
+      </a>
+      <a href="task2.html" class="task-link">
+        <div class="task-title">Task 2: Kanban Board (Option A)</div>
+        <div class="task-desc">10 tasks, filter by tag, search, column limit rule (max 3), event delegation.</div>
+      </a>
+      <a href="task3.html" class="task-link">
+        <div class="task-title">Task 3: Ticket Builder (Option A)</div>
+        <div class="task-desc">6 fields, blur/input validation, dynamic preview, booking code generation.</div>
+      </a>
+    </div>
+  </div>
+</body>
+</html>

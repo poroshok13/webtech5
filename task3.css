@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f9;
+  color: #222;
+  padding: 24px 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.back-link {
+  color: #0066cc;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.error-summary {
+  background-color: #ffebee;
+  color: #c62828;
+  padding: 10px 14px;
+  border: 1px solid #ef9a9a;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: 650px) {
+  .layout {
+    grid-template-columns: 1.2fr 0.8fr;
+  }
+}
+
+form {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+label {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+input, select {
+  padding: 8px 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[aria-invalid="true"],
+select[aria-invalid="true"] {
+  border-color: #d32f2f;
+  background-color: #fff8f8;
+}
+
+.error-text {
+  font-size: 12px;
+  color: #d32f2f;
+  min-height: 16px;
+}
+
+button[type="submit"] {
+  padding: 10px;
+  font-size: 15px;
+  background: #0066cc;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background: #0052a3;
+}
+
+.preview-card {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.success-card {
+  background: #e8f5e9;
+  border: 1px solid #a5d6a7;
+  color: #2e7d32;
+  border-radius: 8px;
+  padding: 16px;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 2: Kanban Board</title>
+  <link rel="stylesheet" href="task2.css">
+  <script src="task2.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <a href="index.html" class="back-link">&larr; Back</a>
+    <h1>Task 2: Kanban Board</h1>
+
+    <div class="controls">
+      <input type="text" id="search-input" placeholder="Search title...">
+      <select id="tag-filter">
+        <option value="all">All Tags</option>
+        <option value="code">Code</option>
+        <option value="design">Design</option>
+        <option value="test">Test</option>
+      </select>
+    </div>
+
+    <div id="progress" class="progress-box"></div>
+    <div id="message" class="message-box"></div>
+
+    <main id="board" class="board">
+      <section class="column">
+        <h2>To Do</h2>
+        <div id="cards-todo" class="cards-container"></div>
+      </section>
+      <section class="column">
+        <h2>In Progress (Max 3)</h2>
+        <div id="cards-in-progress" class="cards-container"></div>
+      </section>
+      <section class="column">
+        <h2>Done</h2>
+        <div id="cards-done" class="cards-container"></div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

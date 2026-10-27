@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 3: Ticket Builder</title>
+  <link rel="stylesheet" href="task3.css">
+  <script src="task3.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <a href="index.html" class="back-link">&larr; Back</a>
+    <h1>Task 3: Ticket Builder</h1>
+
+    <div id="error-summary" class="error-summary" hidden></div>
+
+    <div class="layout">
+      <form id="ticket-form" novalidate>
+        <div class="field">
+          <label for="name">Full Name (First &amp; Last):</label>
+          <input type="text" id="name" required>
+          <span id="name-error" class="error-text"></span>
+        </div>
+
+        <div class="field">
+          <label for="email">Email:</label>
+          <input type="email" id="email" required>
+          <span id="email-error" class="error-text"></span>
+        </div>
+
+        <div class="field">
+          <label for="event">Event:</label>
+          <select id="event" required>
+            <option value="">-- Choose event --</option>
+            <option value="AITU Hackathon">AITU Hackathon</option>
+            <option value="Web Tech Conference">Web Tech Conference</option>
+          </select>
+          <span id="event-error" class="error-text"></span>
+        </div>
+
+        <div class="field">
+          <label for="date">Event Date:</label>
+          <input type="date" id="date" required>
+          <span id="date-error" class="error-text"></span>
+        </div>
+
+        <div class="field">
+          <label for="type">Ticket Type:</label>
+          <select id="type" required>
+            <option value="">-- Choose type --</option>
+            <option value="standard">Standard (10 left - $20)</option>
+            <option value="vip">VIP (3 left - $50)</option>
+            <option value="student">Student (5 left - $10)</option>
+          </select>
+          <span id="type-error" class="error-text"></span>
+        </div>
+
+        <div class="field">
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity" min="1" max="20" placeholder="1" required>
+          <span id="quantity-error" class="error-text"></span>
+        </div>
+
+        <button type="submit" id="btn-submit">Book Ticket</button>
+      </form>
+
+      <div class="preview">
+        <h2>Live Preview</h2>
+        <div class="preview-card">
+          <p><strong>Event:</strong> <span id="prev-event">—</span></p>
+          <p><strong>Name:</strong> <span id="prev-name">—</span></p>
+          <p><strong>Email:</strong> <span id="prev-email">—</span></p>
+          <p><strong>Date:</strong> <span id="prev-date">—</span></p>
+          <p><strong>Type:</strong> <span id="prev-type">—</span></p>
+          <p><strong>Quantity:</strong> <span id="prev-qty">0</span></p>
+          <hr>
+          <p><strong>Total:</strong> <span id="prev-total">$0</span></p>
+        </div>
+      </div>
+    </div>
+
+    <div id="result"></div>
+  </div>
+</body>
+</html>
